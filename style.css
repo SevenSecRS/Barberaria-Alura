@@ -8,6 +8,7 @@ header {
 }
 
 .caixa {
+    text-shadow: 2px 2px 7px;
     position: relative;
     width: 940px;
     margin: 0 auto;
@@ -33,9 +34,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #C78C19;
-    text-decoration: underline;
-    transition: 100ms all;
+    color: #5a5858;
+    transition: 350ms all;
 }
 
 .produtos {
@@ -55,11 +55,12 @@ nav a:hover {
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
+    box-shadow: 10px 10px 5px #000000;
 }
 
 .produtos li:hover {
     opacity: 1;
-    border-color: #C78C19;
+    border-color: rgb(75, 75, 74);
     transition: 350ms;
     transform: scale(1.05);
 }
@@ -182,6 +183,7 @@ table:hover {
     font-size: 2em;
     margin: 0 0 1em;
     clear: left;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .principal {
@@ -207,6 +209,7 @@ table:hover {
     width: 120px;
     float: left;
     margin: 0 20px 20px 0;
+    box-shadow: 10px 10px 15px #000000;
 }
 
 .beneficios {
@@ -240,11 +243,12 @@ table:hover {
 .imagem-beneficios {
     width: 60%;
     opacity: 0.6;
+    box-shadow: 10px 10px 40px #000000;
 }
 
 .imagem-beneficios:hover {
-    opacity: 1;
-    transition: 350ms;
+    opacity: 0.8;
+    transition: 350ms all;
 }
 
 .mapa {
@@ -255,6 +259,8 @@ table:hover {
 .mapa-conteudo {
     width: 940px;
     margin: 0 auto;
+    box-shadow: 10px 10px 60px 20px #000000;
+    opacity: 0.9;
 }
 
 .mapa p {
@@ -266,9 +272,34 @@ table:hover {
     opacity: 0.6;
     width: 560px;
     margin: 2em auto;
+    box-shadow: 10px 10px 40px #000000;
 }
 
 .video:hover {
+    transform: scale(1.05);
     opacity: 1;
-    transition: 350ms;
+    transition: 350ms all;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa,
+    .principal,
+    .conteudo-beneficios,
+    .mapa-conteudo {
+        width: auto;
+    }
+    .video {
+        width: 375px;
+        margin: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .lista-beneficios,
+    .imagem-beneficios {
+        width: 100%;
+    }
 }
